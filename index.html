@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EQUIS — Freelance Equine Photography by Elena Voss</title>
+    
+    <!-- Bootstrap 5 CSS (Grid Only or Full) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css?v=2">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22serif%22 fill=%22%23c9a84c%22>E</text></svg>">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#hero" class="logo">EQUIS</a>
+            
+            <nav class="nav-links">
+                <a href="#hero" class="active">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#process">Process</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="toggle-btn dir-toggle" title="Toggle RTL">
+                    <i data-lucide="align-right"></i>
+                </button>
+                <button class="toggle-btn theme-toggle" title="Toggle Theme">
+                    <i data-lucide="sun"></i>
+                </button>
+                <a href="login.html" class="btn-equis btn-outline-gold">Login</a>
+            </div>
+
+            <div class="hamburger">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer-overlay"></div>
+    <div class="mobile-drawer">
+        <a href="#hero" class="logo mb-4">EQUIS</a>
+        <a href="#hero">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <hr class="my-4" style="border-color: var(--border)">
+        <div class="d-flex gap-3 mb-4">
+            <button class="toggle-btn dir-toggle"><i data-lucide="align-right"></i></button>
+            <button class="toggle-btn theme-toggle"><i data-lucide="sun"></i></button>
+        </div>
+        <a href="login.html" class="btn-equis btn-outline-gold w-100 mb-3">Login</a>
+        <a href="#contact" class="btn-equis btn-gold w-100">Book a Session</a>
+    </div>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <span class="section-label uppercase">Equine Photography</span>
+                    <h1>Where Power Meets <span class="grace">Grace</span></h1>
+                    <p>Capturing the untamed spirit of horses across landscapes, arenas, and open fields. Available for private sessions, competitions, and ranch documentation.</p>
+                    <div class="hero-ctas">
+                        <a href="#portfolio" class="btn-equis btn-gold">View Portfolio</a>
+                        <a href="#contact" class="btn-equis btn-outline-white">Book a Session</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span class="text-gold uppercase scroll-text">Scroll</span>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item delay-300" data-aos="fade-up">
+                    <span class="stat-number">350+</span>
+                    <span class="stat-label">Sessions</span>
+                </div>
+                <div class="stat-item delay-600" data-aos="fade-up">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat-item delay-900" data-aos="fade-up">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Awards</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: About -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-up">
+                        <div class="about-img-wrapper">
+                            <img src="image/about.jpg" alt="Elena Voss" class="about-img">
+                            <div class="experience-badge">15+ Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5" data-aos="fade-up" style="transition-delay: 0.2s;">
+                        <span class="section-label">About Elena</span>
+                        <h2 class="section-title">A Lifetime Devoted to <br><span class="text-gold italic">Horses & Light</span></h2>
+                        <p class="mb-4">Professional equine photographer based globally. Elena started photographing horses at the age of 12, blending her passion for these majestic creatures with a deep fascination for the interplay of light and shadow.</p>
+                        <p class="mb-5">Trained in fine art photography, her work goes beyond mere documentation. She captures the soul, power, and elegance of each horse. Trusted by Olympic riders, prestigious studs, and historic ranches worldwide.</p>
+                        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i data-lucide="camera"></i>
+                                <span>Competition Photography</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="horse"></i>
+                                <span>Portrait Sessions</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="mountain"></i>
+                                <span>Landscape & Ranch</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="trophy"></i>
+                                <span>Award-Winning Work</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="btn-equis btn-outline-gold mt-5">Download Portfolio PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Portfolio -->
+        <section id="portfolio" class="portfolio">
+            <div class="container text-center">
+                <span class="section-label">Selected Works</span>
+                <h2 class="section-title">Masterpieces in <span class="italic text-gold">Motion</span></h2>
+                
+                <div class="filter-tabs" data-aos="fade-up">
+                    <div class="filter-tab active" data-filter="all">All</div>
+                    <div class="filter-tab" data-filter="portraits">Portraits</div>
+                    <div class="filter-tab" data-filter="action">Action</div>
+                    <div class="filter-tab" data-filter="competition">Competition</div>
+                    <div class="filter-tab" data-filter="ranch">Ranch</div>
+                    <div class="filter-tab" data-filter="fine-art">Fine Art</div>
+                </div>
+
+                <div class="gallery-grid" data-aos="fade-up">
+                    <!-- Item 1 -->
+                    <div class="gallery-item" data-category="portraits">
+                        <img src="image/work-1.jpg" alt="Morning Stillness">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Portraits</span>
+                            <h3 class="gallery-title">Morning Stillness</h3>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="gallery-item" data-category="action">
+                        <img src="image/work-2.jpg" alt="Full Gallop">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Action</span>
+                            <h3 class="gallery-title">Full Gallop</h3>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="gallery-item" data-category="competition">
+                        <img src="image/work-3.jpg" alt="Showjumping Gold">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Competition</span>
+                            <h3 class="gallery-title">Showjumping Gold</h3>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="gallery-item" data-category="ranch">
+                        <img src="image/work-4.jpg" alt="Golden Hour Ranch">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Ranch</span>
+                            <h3 class="gallery-title">Golden Hour Ranch</h3>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="gallery-item" data-category="fine-art">
+                        <img src="image/work-5.jpg" alt="Shadow & Light">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Fine Art</span>
+                            <h3 class="gallery-title">Shadow & Light</h3>
+                        </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="gallery-item" data-category="portraits">
+                        <img src="image/work-6.jpg" alt="Velvet Nose">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Portraits</span>
+                            <h3 class="gallery-title">Velvet Nose</h3>
+                        </div>
+                    </div>
+                    <!-- Item 7 -->
+                    <div class="gallery-item" data-category="action">
+                        <img src="image/work-7.jpg" alt="Desert Sprint">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Action</span>
+                            <h3 class="gallery-title">Desert Sprint</h3>
+                        </div>
+                    </div>
+                    <!-- Item 8 -->
+                    <div class="gallery-item" data-category="competition">
+                        <img src="image/work-8.jpg" alt="Arena Champion">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Competition</span>
+                            <h3 class="gallery-title">Arena Champion</h3>
+                        </div>
+                    </div>
+                    <!-- Item 9 -->
+                    <div class="gallery-item" data-category="ranch">
+                        <img src="image/work-9.jpg" alt="Dusk Pasture">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Ranch</span>
+                            <h3 class="gallery-title">Dusk Pasture</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn-equis btn-outline-gold mt-5">Load More</button>
+            </div>
+        </section>
+
+        <!-- Section 4: Services -->
+        <section id="services" class="services">
+            <div class="container text-center">
+                <span class="section-label">What I Offer</span>
+                <h2 class="section-title">Specialized Equine <span class="italic text-gold">Services</span></h2>
+                
+                <div class="service-grid mt-5">
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-icon"><i data-lucide="camera"></i></div>
+                        <h3>Portrait Session</h3>
+                        <p class="text-muted">Capturing the unique character and bond with your horse in a refined studio or natural set-up.</p>
+                        <span class="service-price">From $350</span>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" style="transition-delay: 0.2s;">
+                        <div class="service-icon"><i data-lucide="zap"></i></div>
+                        <h3>Action & Sport</h3>
+                        <p class="text-muted">High-speed dynamic shots capturing the peak moments of athleticism and power.</p>
+                        <span class="service-price">From $500</span>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" style="transition-delay: 0.4s;">
+                        <div class="service-icon"><i data-lucide="trophy"></i></div>
+                        <h3>Competition Day</h3>
+                        <p class="text-muted">Dedicated coverage for shows, documenting your journey from warm-up to the podium.</p>
+                        <span class="service-price">From $800</span>
+                    </div>
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-icon"><i data-lucide="mountain"></i></div>
+                        <h3>Ranch Documentation</h3>
+                        <p class="text-muted">Capturing the life, landscape, and spirit of your stable or ranch in a documentary style.</p>
+                        <span class="service-price">From $1,200</span>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" style="transition-delay: 0.2s;">
+                        <div class="service-icon"><i data-lucide="frame"></i></div>
+                        <h3>Fine Art Print</h3>
+                        <p class="text-muted">Limited edition museum-quality prints of her most iconic works for your home or gallery.</p>
+                        <span class="service-price">From $200</span>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" style="transition-delay: 0.4s;">
+                        <div class="service-icon"><i data-lucide="calendar"></i></div>
+                        <h3>Event Coverage</h3>
+                        <p class="text-muted">Professional photography for clinics, sales, and agricultural events worldwide.</p>
+                        <span class="service-price">From $650</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Process -->
+        <section id="process" class="process">
+            <div class="container text-center">
+                <span class="section-label">How It Works</span>
+                <h2 class="section-title">The Creative <span class="italic text-gold">Journey</span></h2>
+                
+                <div class="process-steps mt-5" data-aos="fade-up">
+                    <div class="step-item">
+                        <div class="step-number">01</div>
+                        <h4>Enquire</h4>
+                        <p>Send your vision and requirements through our contact form.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">02</div>
+                        <h4>Consult</h4>
+                        <p>30-min call to plan the perfect session and locations.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">03</div>
+                        <h4>Shoot</h4>
+                        <p>The magic happens on location with professional guidance.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">04</div>
+                        <h4>Deliver</h4>
+                        <p>Edited gallery delivered within 14 days of the session.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Testimonials -->
+        <section id="testimonials" class="testimonials">
+            <div class="container text-center">
+                <span class="section-label">Client Stories</span>
+                <h2 class="section-title">Heard from the <span class="italic text-gold">Fields</span></h2>
+                
+                <div class="testimonial-grid mt-5">
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <p class="quote">"Elena captured our mare's personality like no one ever has. Every image is a work of art that captures the soul."</p>
+                        <div class="client-info">
+                            <img src="image/person_1.jpg" alt="Sarah M." class="client-avatar">
+                            <div class="client-details">
+                                <h5>Sarah M.</h5>
+                                <span>Dressage Champion</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" data-aos="fade-up" style="transition-delay: 0.2s;">
+                        <div class="stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <p class="quote">"The action shots from our competition were breathtaking. Professional, unobtrusive, and incredibly talented."</p>
+                        <div class="client-info">
+                            <img src="image/person_2.jpg" alt="James R." class="client-avatar">
+                            <div class="client-details">
+                                <h5>James R.</h5>
+                                <span>Ranch Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" data-aos="fade-up" style="transition-delay: 0.4s;">
+                        <div class="stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <p class="quote">"We hired Elena for our stud farm brochure. The results exceeded every expectation. Truly world-class photography."</p>
+                        <div class="client-info">
+                            <img src="image/person_3.jpg" alt="Lena K." class="client-avatar">
+                            <div class="client-details">
+                                <h5>Lena K.</h5>
+                                <span>Stud Farm Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Pricing -->
+        <section id="pricing" class="pricing">
+            <div class="container text-center">
+                <span class="section-label">Simple, Transparent Pricing</span>
+                <h2 class="section-title">Invest in <span class="italic text-gold">Memories</span></h2>
+                
+                <div class="pricing-grid mt-5">
+                    <div class="pricing-card" data-aos="fade-up">
+                        <span class="price-name">Essential</span>
+                        <span class="price-value">$350</span>
+                        <ul class="price-features">
+                            <li><i data-lucide="check"></i> 2hr portrait session</li>
+                            <li><i data-lucide="check"></i> 20 edited images</li>
+                            <li><i data-lucide="check"></i> Online gallery</li>
+                            <li><i data-lucide="check"></i> Personal use license</li>
+                        </ul>
+                        <a href="#contact" class="btn-equis btn-outline-gold w-100">Book Now</a>
+                    </div>
+                    <div class="pricing-card featured" data-aos="zoom-in">
+                        <div class="popular-badge">Most Popular</div>
+                        <span class="price-name">Signature</span>
+                        <span class="price-value">$750</span>
+                        <ul class="price-features">
+                            <li><i data-lucide="check"></i> Full day shoot</li>
+                            <li><i data-lucide="check"></i> 60 edited images</li>
+                            <li><i data-lucide="check"></i> Print release</li>
+                            <li><i data-lucide="check"></i> 2 locations</li>
+                            <li><i data-lucide="check"></i> Professional retouching</li>
+                        </ul>
+                        <a href="#contact" class="btn-equis btn-gold w-100">Book Now</a>
+                    </div>
+                    <div class="pricing-card" data-aos="fade-up">
+                        <span class="price-name">Collection</span>
+                        <span class="price-value">$1,400</span>
+                        <ul class="price-features">
+                            <li><i data-lucide="check"></i> 3-day shoot</li>
+                            <li><i data-lucide="check"></i> 150+ images</li>
+                            <li><i data-lucide="check"></i> Custom album</li>
+                            <li><i data-lucide="check"></i> Commercial license</li>
+                            <li><i data-lucide="check"></i> All files raw access</li>
+                        </ul>
+                        <a href="#contact" class="btn-equis btn-outline-gold w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Promotional Banner -->
+        <section class="promo-banner">
+            <div class="container" data-aos="fade-up">
+                <span class="section-label">Limited Availability — 2025 Season</span>
+                <h2 class="section-title">Only <span class="italic text-gold">6 Session Slots</span> Remaining This Quarter</h2>
+                <p>Don't miss the chance to have your horses photographed by an award-winning eye. Book your session before they're gone.</p>
+                <a href="#contact" class="btn-equis btn-gold">Reserve Your Slot Now</a>
+            </div>
+        </section>
+
+        <!-- NEW: Section 8.1: The Visionary Approach (Split Left) -->
+        <section class="content-block bg-dark">
+            <div class="container">
+                <div class="split-section" data-aos="fade-up">
+                    <div class="split-image">
+                        <img src="image/img_1.jpg" alt="Equine Vision">
+                    </div>
+                    <div class="split-text">
+                        <span class="section-label">The Visionary Approach</span>
+                        <h3>Beyond the <br><span class="italic text-gold">Standard Frame</span></h3>
+                        <p>Elena Voss doesn't just take pictures; she orchestrates cinematic moments. By understanding the anatomy and psychology of the horse, she anticipates the split-second where power meets pure vulnerability.</p>
+                        <p>Every session is a collaboration between artist, owner, and animal—resulting in imagery that feels both intimate and grand.</p>
+                        <a href="#portfolio" class="btn-equis btn-outline-gold">Explore the Vision</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: Section 8.2: Full Width Banner -->
+        <section class="full-banner-section banner-wild-elegance" data-aos="fade">
+            <div class="banner-content">
+                <span class="section-label text-white">Wild Elegance</span>
+                <h2>Unfiltered Beauty. <br>Unmatched <span class="text-gold">Power.</span></h2>
+                <p class="text-white mb-5">From the dusty plains to the manicured arena, we capture the horse in its truest form.</p>
+                <a href="#contact" class="btn-equis btn-gold">Start Your Journey</a>
+            </div>
+        </section>
+
+        <!-- NEW: Section 8.3: Heritage & Bond (Split Right) -->
+        <section class="content-block">
+            <div class="container">
+                <div class="split-section flex-row-reverse" data-aos="fade-up">
+                    <div class="split-image">
+                        <img src="image/img_2.jpg" alt="Equine Heritage">
+                    </div>
+                    <div class="split-text">
+                        <span class="section-label">Heritage & Bond</span>
+                        <h3>Capturing the <br><span class="italic text-gold">Legacy</span></h3>
+                        <p>A horse is more than a companion; it's a chapter in your family's history. Our heritage sessions focus on the deep, unspoken connection between rider and horse, set against the backdrop of your home or stable.</p>
+                        <p>We document the quiet moments—the soft nuzzle, the shared breath—that define a lifetime together.</p>
+                        <a href="#contact" class="btn-equis btn-outline-gold">Book a Heritage Session</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: Section 8.4: The EQUIS Signature (Highlights) -->
+        <section class="content-block bg-dark">
+            <div class="container text-center">
+                <span class="section-label">The EQUIS Signature</span>
+                <h2 class="section-title">What Makes Us <span class="italic text-gold">Different</span></h2>
+                
+                <div class="feature-highlight-grid">
+                    <div class="highlight-card" data-aos="fade-up">
+                        <i data-lucide="award"></i>
+                        <h4>Artistic Mastery</h4>
+                        <p class="text-muted">Utilizing high-end editorial lighting and museum-quality composition techniques.</p>
+                    </div>
+                    <div class="highlight-card card-delay-1" data-aos="fade-up">
+                        <i data-lucide="shield-check"></i>
+                        <h4>Safety First</h4>
+                        <p class="text-muted">Deep expertise in horse behavior ensuring a stress-free environment for every subject.</p>
+                    </div>
+                    <div class="highlight-card card-delay-2" data-aos="fade-up">
+                        <i data-lucide="globe"></i>
+                        <h4>Global Reach</h4>
+                        <p class="text-muted">Available for commissions worldwide, from private ranches to international arenas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 contact-info" data-aos="fade-up">
+                        <span class="section-label">Let's Create Together</span>
+                        <h2 class="section-title">Capture the <span class="italic text-gold">Spirit</span></h2>
+                        <p class="text-muted">I would love to hear about your horse and your vision. Reach out to discuss a potential session or project.</p>
+                        
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <i data-lucide="mail"></i>
+                                <span>hello@equis.photo</span>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="map-pin"></i>
+                                <span>Available Worldwide</span>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="phone"></i>
+                                <span>+1 (555) 000-0000</span>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                            <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                            <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-aos="fade-up" style="transition-delay: 0.2s;">
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" placeholder="Full Name" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="tel" placeholder="Phone Number">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <select required>
+                                        <option value="" disabled selected>Session Type</option>
+                                        <option value="portrait">Portrait Session</option>
+                                        <option value="action">Action & Sport</option>
+                                        <option value="competition">Competition Day</option>
+                                        <option value="ranch">Ranch Documentation</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 form-group">
+                                    <textarea rows="6" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-equis btn-gold w-100">Send Enquiry</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <span class="footer-logo">EQUIS</span>
+                    <p class="footer-tagline">Fine art equine photography capturing the untamed beauty of the horse.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0 footer-links">
+                    <h4>Quick Links</h4>
+                    <ul class="row">
+                        <div class="col-6">
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#about">About</a></li>
+                        </div>
+                        <div class="col-6">
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-lg-4 footer-links">
+                    <h4>Newsletter</h4>
+                    <p class="text-muted mb-4">Stay updated with the latest sessions and stories.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="contact-form" placeholder="Your Email" style="margin-bottom: 0;">
+                        <button type="submit" class="btn-equis btn-gold">Join</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 EQUIS Photography by Elena Voss. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Promotional Popup -->
+    <div class="promo-modal">
+        <div class="promo-overlay"></div>
+        <div class="promo-card">
+            <div class="promo-strip"></div>
+            <div class="promo-content">
+                <button class="close-promo"><i data-lucide="x"></i></button>
+                <span class="section-label">Limited Time Offer</span>
+                <h2>Book Your Session This Month — <span class="text-gold">Save 20%</span></h2>
+                <p>Mention code <strong class="text-gold">EQUIS20</strong> when booking any Signature or Collection session before month end.</p>
+                <input type="email" class="contact-form" placeholder="Enter your email to claim offer">
+                <button class="btn-equis btn-gold w-100">Claim My 20% Discount</button>
+                <p class="small text-center mt-3" style="font-size: 0.7rem; color: var(--text3);">No spam. Unsubscribe anytime.</p>
+                <a href="#" class="promo-dismiss">No thanks, I'll pay full price</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
