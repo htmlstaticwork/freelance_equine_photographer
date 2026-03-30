@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initPromoPopup();
     initAOS();
     initBackToTop();
+    initHeroScroll();
     
     // Initialize Lucide Icons
     if (typeof lucide !== 'undefined') {
@@ -257,5 +258,18 @@ function initBackToTop() {
             top: 0,
             behavior: 'smooth'
         });
+    });
+}
+
+// --- HERO SCROLL INDICATOR ---
+function initHeroScroll() {
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (!scrollIndicator) return;
+
+    scrollIndicator.addEventListener('click', () => {
+        const aboutSection = document.querySelector('#about');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
     });
 }
