@@ -1532,3 +1532,36 @@ footer {
 .hero-slide-1 { background-image: url('../image/hero_bg_1.jpg'); }
 .hero-slide-2 { background-image: url('../image/hero_bg_2.jpg'); }
 .hero-slide-3 { background-image: url('../image/hero_bg_3.jpg'); }
+
+/* --- BACK TO TOP --- */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 45px;
+    height: 45px;
+    background-color: var(--gold);
+    color: #000;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: var(--transition);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background-color: var(--gold2);
+    transform: translateY(-3px);
+}
