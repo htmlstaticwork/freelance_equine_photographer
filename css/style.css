@@ -1016,6 +1016,8 @@ section {
     width: 20px;
     height: 20px;
     fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
 }
 
 .social-link:hover {
@@ -1074,6 +1076,65 @@ footer {
     letter-spacing: 0.1em;
     margin-bottom: 2rem;
     color: var(--text);
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none !important;
+    transition: var(--transition);
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg3);
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    color: var(--gold);
+    font-family: serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.logo-text {
+    font-family: var(--font-fancy);
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    text-transform: uppercase;
+}
+
+.brand-logo:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Specific Contexts */
+footer .brand-logo {
+    margin-bottom: 1.5rem;
+}
+
+.auth-card .brand-logo {
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.footer-horizontal-links li a {
+    color: var(--text2);
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.footer-horizontal-links li a:hover {
+    color: var(--gold);
 }
 
 .footer-links ul li {
@@ -1370,8 +1431,20 @@ footer {
     transition: var(--transition);
 }
 
+.btn-social svg {
+    width: 22px;
+    height: 22px;
+}
+
+.btn-social svg.icon-monochrome {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
 .btn-social:hover {
     border-color: var(--gold);
+    color: var(--gold);
 }
 
 .icon-facebook {
@@ -1384,6 +1457,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    white-space: nowrap;
 }
 
 .auth-footer {

@@ -25,7 +25,10 @@
     <!-- Header / Navigation -->
     <header>
         <div class="nav-container">
-            <a href="#hero" class="logo">EQUIS</a>
+            <a href="#hero" class="brand-logo">
+                <div class="logo-icon">E</div>
+                <span class="logo-text">EQUIS</span>
+            </a>
 
             <nav class="nav-links">
                 <a href="#hero" class="active">Home</a>
@@ -39,16 +42,40 @@
 
             <div class="nav-actions">
                 <button class="toggle-btn dir-toggle" title="Toggle RTL">
-                    <i data-lucide="align-right"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-align-right">
+                        <line x1="21" x2="3" y1="6" y2="6" />
+                        <line x1="21" x2="9" y1="12" y2="12" />
+                        <line x1="21" x2="7" y1="18" y2="18" />
+                    </svg>
                 </button>
                 <button class="toggle-btn theme-toggle" title="Toggle Theme">
-                    <i data-lucide="sun"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-sun">
+                        <circle cx="12" cy="12" r="4" />
+                        <path d="M12 2v2" />
+                        <path d="M12 20v2" />
+                        <path d="m4.93 4.93 1.41 1.41" />
+                        <path d="m17.66 17.66 1.41 1.41" />
+                        <path d="M2 12h2" />
+                        <path d="M20 12h2" />
+                        <path d="m6.34 17.66-1.41 1.41" />
+                        <path d="m19.07 4.93-1.41 1.41" />
+                    </svg>
                 </button>
                 <a href="login.html" class="btn-equis btn-outline-gold">Login</a>
             </div>
 
             <div class="hamburger">
-                <i data-lucide="menu"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-menu">
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
             </div>
         </div>
     </header>
@@ -56,7 +83,10 @@
     <!-- Mobile Drawer -->
     <div class="drawer-overlay"></div>
     <div class="mobile-drawer">
-        <a href="#hero" class="logo mb-4">EQUIS</a>
+        <a href="#hero" class="brand-logo mb-4">
+            <div class="logo-icon">E</div>
+            <span class="logo-text">EQUIS</span>
+        </a>
         <a href="#hero">Home</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#about">About</a>
@@ -64,13 +94,11 @@
         <a href="#process">Process</a>
         <a href="#pricing">Pricing</a>
         <a href="#contact">Contact</a>
-        <hr class="my-4" style="border-color: var(--border)">
-        <div class="d-flex gap-3 mb-4">
-            <button class="toggle-btn dir-toggle"><i data-lucide="align-right"></i></button>
-            <button class="toggle-btn theme-toggle"><i data-lucide="sun"></i></button>
+        <div class="d-flex gap-3 mb-4 drawer-actions">
+            <button class="toggle-btn dir-toggle" title="Toggle RTL"><i data-lucide="align-right"></i></button>
+            <button class="toggle-btn theme-toggle" title="Toggle Theme"><i data-lucide="sun"></i></button>
         </div>
         <a href="login.html" class="btn-equis btn-outline-gold w-100 mb-3">Login</a>
-        <a href="#contact" class="btn-equis btn-gold w-100">Book a Session</a>
     </div>
 
     <main>
@@ -132,20 +160,20 @@
                             studs, and historic ranches worldwide.</p>
 
                         <div class="feature-list">
-                            <div class="feature-item">
-                                <i data-lucide="camera"></i>
+                            <div class="feature-item" data-aos="fade-up">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
                                 <span>Competition Photography</span>
                             </div>
-                            <div class="feature-item">
-                                <i data-lucide="horse"></i>
+                            <div class="feature-item" data-aos="fade-up" style="transition-delay: 0.1s;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
                                 <span>Portrait Sessions</span>
                             </div>
-                            <div class="feature-item">
-                                <i data-lucide="mountain"></i>
+                            <div class="feature-item" data-aos="fade-up" style="transition-delay: 0.2s;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mountain"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
                                 <span>Landscape & Ranch</span>
                             </div>
-                            <div class="feature-item">
-                                <i data-lucide="trophy"></i>
+                            <div class="feature-item" data-aos="fade-up" style="transition-delay: 0.3s;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
                                 <span>Award-Winning Work</span>
                             </div>
                         </div>
@@ -554,10 +582,32 @@
                             </div>
                         </div>
 
-                        <div class="social-links">
-                            <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
-                            <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
-                            <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        <div class="social-links mb-5">
+                            <a href="#" class="social-link" title="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-instagram">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" title="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-facebook">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" title="Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-twitter">
+                                    <path
+                                        d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                    </path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-7" data-aos="fade-up" style="transition-delay: 0.2s;">
@@ -599,12 +649,15 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-between align-items-start">
                 <div class="col-lg-4 mb-5 mb-lg-0">
-                    <span class="footer-logo">EQUIS</span>
+                    <a href="#hero" class="brand-logo">
+                        <div class="logo-icon">E</div>
+                        <span class="logo-text">EQUIS</span>
+                    </a>
                     <p class="footer-tagline">Fine art equine photography capturing the untamed beauty of the horse.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link">
+                        <a href="#" class="social-link" title="Instagram">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-instagram">
@@ -613,14 +666,14 @@
                                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
                             </svg>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="#" class="social-link" title="Facebook">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-facebook">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                             </svg>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="#" class="social-link" title="Twitter">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-twitter">
@@ -631,24 +684,28 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-5 mb-lg-0 footer-links">
-                    <h4>Quick Links</h4>
-                    <ul class="row list-unstyled">
-                        <li class="col-6 mb-2"><a href="#hero">Home</a></li>
-                        <li class="col-6 mb-2"><a href="#services">Services</a></li>
-                        <li class="col-6 mb-2"><a href="#portfolio">Portfolio</a></li>
-                        <li class="col-6 mb-2"><a href="#pricing">Pricing</a></li>
-                        <li class="col-6"><a href="#about">About</a></li>
-                        <li class="col-6"><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 footer-links">
+
+                <!-- Column 2: Newsletter -->
+                <div class="col-lg-3 mb-5 mb-lg-0 footer-links">
                     <h4>Newsletter</h4>
-                    <p class="text-muted mb-4">Stay updated with the latest sessions and stories.</p>
+                    <p class="text-muted mb-4" style="font-size: 0.9rem;">Stay updated with the latest sessions and stories.</p>
                     <form class="newsletter-form">
                         <input type="email" class="contact-form" placeholder="Your Email" style="margin-bottom: 0;">
                         <button type="submit" class="btn-equis btn-gold">Join</button>
                     </form>
+                </div>
+
+                <!-- Column 3: Quick Links -->
+                <div class="col-lg-3 footer-links">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
 
